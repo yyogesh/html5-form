@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            font-family: Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        td,
+        th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+
+        #t01 tr:nth-child(odd) {
+            background-color: #807f7f;
+        }
+
+        #t01 th {
+            background-color: black;
+            color: white;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        a:link {
+            color: gray;
+        }
+
+        a:visited {
+            color: green;
+        }
+
+        a:hover {
+            color: hotpink;
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: blue;
+        }
+
+        div.ex1 {
+            width: 500px;
+            margin: auto;
+            border: 3px solid #73AD21;
+            height: 200px;
+            overflow-y: auto;
+        }
+
+        div.ex2 {
+            max-width: 500px;
+            margin: auto;
+            border: 3px solid #73AD21;
+        }
+
+        div.static {
+            position: static;
+            left: 30px;
+            border: 3px solid #73AD21;
+        }
+
+        div.relative {
+            position: relative;
+            left: 30px;
+            border: 3px solid #73AD21;
+        }
+
+        div.fixed {
+            position: fixed;
+            top: 100px;
+            left: 40px;
+            width: 300px;
+            border: 3px solid #73AD21;
+        }
+
+        div.relative1 {
+            position: relative;
+            width: 400px;
+            height: 200px;
+            border: 3px solid #73AD21;
+        }
+
+        div.absolute {
+            position: absolute;
+            top: 80px;
+            right: 0;
+            width: 200px;
+            height: 100px;
+            border: 3px solid #73AD21;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="static">
+        This div element has position: static;
+    </div>
+    <br />
+
+    <div class="relative">
+        This div element has position: relative;
+    </div>
+
+    <br />
+
+    <div class="fixed">
+        This div element has position: fixed;
+    </div>
+    <br />
+
+    <div class="relative1">This div element has position: relative;
+        <div class="absolute">This div element has position: absolute;</div>
+    </div>
+
+    <br />
+    <div class="ex1">This div element has width: 500px; This div element has width: 500px;
+        This div element has width: 500px;This div element has width: 500px; This div element has width: 500px;
+        This div element has width: 500px;This div element has width: 500px; This div element has width: 500px;
+        This div element has width: 500px;This div element has width: 500px; This div element has width: 500px;
+        This div element has width: 500px;This div element has width: 500px; This div element has width: 500px;
+        This div element has width: 500px;This div element has width: 500px; This div element has width: 500px;
+        This div element has width: 500px;This div element has width: 500px; This div element has width: 500px;
+        This div element has width: 500px;This div element has width: 500px; This div element has width: 500px;
+        This div element has width: 500px;This div element has width: 500px; This div element has width: 500px;
+        This div element has width: 500px;This div element has width: 500px; This div element has width: 500px;
+        This div element has width: 500px;This div element has width: 500px; This div element has width: 500px;
+        This div element has width: 500px;This div element has width: 500px; This div element has width: 500px;
+        This div element has width: 500px;This div element has width: 500px; This div element has width: 500px;
+        This div element has width: 500px;This div element has width: 500px; This div element has width: 500px;
+        This div element has width: 500px;This div element has width: 500px; This div element has width: 500px;
+        This div element has width: 500px;This div element has width: 500px; This div element has width: 500px;
+        This div element has width: 500px;This div element has width: 500px; This div element has width: 500px;
+        This div element has width: 500px;This div element has width: 500px; This div element has width: 500px;
+        This div element has width: 500px;This div element has width: 500px; This div element has width: 500px;
+        This div element has width: 500px;This div element has width: 500px; This div element has width: 500px;
+        This div element has width: 500px;This div element has width: 500px; This div element has width: 500px;
+        This div element has width: 500px;This div element has width: 500px; This div element has width: 500px;
+        This div element has width: 500px;This div element has width: 500px; This div element has width: 500px;
+        This div element has width: 500px;This div element has width: 500px; This div element has width: 500px;
+        This div element has width: 500px;This div element has width: 500px; This div element has width: 500px;
+    </div>
+    <br>
+    <div class="ex2">This div element has max-width: 500px;</div>
+
+    <a href="http://google.com">Link</a>
+
+    <span style="cursor:auto">auto</span><br>
+    <span style="cursor:crosshair; display: block;">crosshair</span>
+    <span style="cursor:default">default</span>
+    <span style="cursor:e-resize">e-resize</span><br>
+    <span style="cursor:help">help</span><br>
+    <span style="cursor:move">move</span><br>
+    <span style="cursor:n-resize">n-resize</span><br>
+    <span style="cursor:ne-resize">ne-resize</span><br>
+    <span style="cursor:nw-resize">nw-resize</span><br>
+    <span style="cursor:pointer">pointer</span><br>
+    <span style="cursor:progress">progress</span><br>
+    <span style="cursor:s-resize">s-resize</span><br>
+    <span style="cursor:se-resize">se-resize</span><br>
+    <span style="cursor:sw-resize">sw-resize</span><br>
+    <span style="cursor:text">text</span><br>
+    <span style="cursor:w-resize">w-resize</span><br>
+    <span style="cursor:wait">wait</span><br>
+    <hr />
+    <table>
+        <caption>Contacts</caption>
+        <tr>
+            <th>Company</th>
+            <th>Contact</th>
+            <th>Country</th>
+        </tr>
+        <tr>
+            <td>Alfreds Futterkiste</td>
+            <td>Maria Anders</td>
+            <td>Germany</td>
+        </tr>
+        <tr>
+            <td>Centro comercial Moctezuma</td>
+            <td>Francisco Chang</td>
+            <td>Mexico</td>
+        </tr>
+        <tr>
+            <td>Ernst Handel</td>
+            <td>Roland Mendel</td>
+            <td>Austria</td>
+        </tr>
+        <tr>
+            <td>Island Trading</td>
+            <td>Helen Bennett</td>
+            <td>UK</td>
+        </tr>
+        <tr>
+            <td>Laughing Bacchus Winecellars</td>
+            <td>Yoshi Tannamuri</td>
+            <td>Canada</td>
+        </tr>
+        <tr>
+            <td>Magazzini Alimentari Riuniti</td>
+            <td>Giovanni Rovelli</td>
+            <td>Italy</td>
+        </tr>
+    </table>
+
+    <hr />
+    <table id="t01">
+        <caption>Contacts</caption>
+        <tr>
+            <th>Company</th>
+            <th>Contact</th>
+            <th>Country</th>
+        </tr>
+        <tr>
+            <td>Alfreds Futterkiste</td>
+            <td>Maria Anders</td>
+            <td>Germany</td>
+        </tr>
+        <tr>
+            <td>Centro comercial Moctezuma</td>
+            <td>Francisco Chang</td>
+            <td>Mexico</td>
+        </tr>
+        <tr>
+            <td>Ernst Handel</td>
+            <td>Roland Mendel</td>
+            <td>Austria</td>
+        </tr>
+        <tr>
+            <td>Island Trading</td>
+            <td>Helen Bennett</td>
+            <td>UK</td>
+        </tr>
+        <tr>
+            <td>Laughing Bacchus Winecellars</td>
+            <td>Yoshi Tannamuri</td>
+            <td>Canada</td>
+        </tr>
+        <tr>
+            <td>Magazzini Alimentari Riuniti</td>
+            <td>Giovanni Rovelli</td>
+            <td>Italy</td>
+        </tr>
+    </table>
+</body>
+
+</html>
